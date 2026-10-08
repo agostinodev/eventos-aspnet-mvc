@@ -1,0 +1,38 @@
+@model IEnumerable<Eventos.Web.Models.EventoVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Eventos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Nombre del evento
+            </th>
+            <th>
+               Fecha del evento
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.NombreEvento)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.FechaEvento)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,13 @@
+# Archivos de compilacion
+[Bb]in/
+[Oo]bj/
+
+#Configuracion local de Visual Studio
+.vs/
+*.user
+*.suo
+*.useroscache
+.*sln.docstates
+
+
+

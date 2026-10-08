@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Eventos.Data/Eventos.Data.csproj" Id="0a2ea759-ff08-4349-ae0f-55981f541d95" />
+  <Project Path="Eventos.Web/Eventos.Web.csproj" />
+</Solution>
